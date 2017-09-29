@@ -1,0 +1,8 @@
+#
+# Assume que "mvn install" já foi executado
+#
+FROM websphere-liberty:webProfile7
+COPY /target/liberty/wlp/usr/servers/defaultServer /config/
+COPY /target/liberty/wlp/usr/shared /opt/ibm/wlp/usr/shared
+# Install required features if not present
+RUN installUtility install --acceptLicense defaultServer
