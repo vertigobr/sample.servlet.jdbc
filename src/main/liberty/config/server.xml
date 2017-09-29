@@ -41,6 +41,6 @@
     
     </httpEndpoint>
     
-    <application name="servlet" context-root="${appContext}" location="${appLocation}" type="war"></application>
+    <!-- <application name="servlet" context-root="${appContext}" location="${appLocation}" type="war"></application> -->
     
 </server>

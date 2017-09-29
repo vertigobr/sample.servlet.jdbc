@@ -4,3 +4,4 @@ target/
 .settings/
 bin/
 /.apt_generated/
+.DS_Store
